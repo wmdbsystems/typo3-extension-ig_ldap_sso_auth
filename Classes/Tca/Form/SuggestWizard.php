@@ -27,10 +27,9 @@ class SuggestWizard {
 	 * Renders a suggestion for the mapping.
 	 *
 	 * @param array $PA
-	 * @param \TYPO3\CMS\Backend\Form\FormEngine $pObj
 	 * @return string
 	 */
-	public function render(array &$PA, \TYPO3\CMS\Backend\Form\FormEngine $pObj) {
+	public function render(array &$PA) {
 		$serverType = (int)$PA['row']['ldap_server'];
 
 		if (substr($PA['field'], -7) === '_basedn') {
